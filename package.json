@@ -1,0 +1,19 @@
+{
+  "name": "addresslocator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Koray K <koray@ohshift.io> (https://github.com/siniradam)",
+  "license": "ISC",
+  "dependencies": {
+    "@googlemaps/google-maps-services-js": "^3.3.31",
+    "@types/google.maps": "^3.53.1",
+    "dotenv": "^16.0.3",
+    "pg": "^8.11.0",
+    "pg-promise": "^11.4.3"
+  }
+}
