@@ -28,17 +28,15 @@ const apiKey = process.env.GOOGLE_MAPS_KEY_ERDM2;
 //   .then((r) => console.log(r));
 
 const fetchMethod = async (location) =>
-  getLocation(client, apiKey, location)
-    .then((fetchResult) => {
-      return {
-        cityID: fetchResult.cityID,
-        districtID: fetchResult.districtID,
-        neighborhoodID: fetchResult.neighborhoodID,
-        lat: fetchResult.geometry.location.lat,
-        lng: fetchResult.geometry.location.lng,
-      };
-    })
-    .then((r) => console.log(r));
+  getLocation(client, apiKey, location).then((fetchResult) => {
+    return {
+      cityID: fetchResult.cityID,
+      districtID: fetchResult.districtID,
+      neighborhoodID: fetchResult.neighborhoodID,
+      lat: fetchResult.geometry.location.lat,
+      lng: fetchResult.geometry.location.lng,
+    };
+  });
 
 //
 sequence(wrongList, fetchMethod).then((results) => {
